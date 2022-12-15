@@ -618,7 +618,7 @@ SandboxVars = {
         -- Minimum zombie kills required to have a chance to become desensitized. 최소 =1 최대 =10000 기본 =500
         MinimumZombieKills = 500,
         -- Maximum zombie kills required to become desensitized 최소 =1 최대 =10000 기본 =2000
-        MaximumZombieKills = 2000,
+        MaximumZombieKills = 1000,
         -- Consider traits that can increase the chance of becoming desensitized (more info in workshop page)
         ConsiderTraits = true,
         -- Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized
