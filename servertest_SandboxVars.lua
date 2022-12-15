@@ -61,7 +61,7 @@ SandboxVars = {
     -- 6 = 오후 9 시
     -- 7 = 밤 12 시
     -- 8 = 오전 2 시
-    StartTime = 2,
+    StartTime = 1,
     -- 기본값=0 - 30 일 사이
     -- 1 = 즉시
     -- 2 = 0 - 30 일 사이
@@ -181,13 +181,13 @@ SandboxVars = {
     -- 2 = 빠름 (50일)
     -- 3 = 보통 (100일)
     -- 4 = 느림 (200일)
-    ErosionSpeed = 3,
+    ErosionSpeed = 5,
     -- 100% 침식하기까지의 일수를 세세하게 설정할 수 있습니다.   -1로 설정하면 침식이 진행되지 않습니다   0으로 설정하면 기본 침식 속도로 진행됩니다.  1=(하루)365=(1년)최대 수치 36500=(100년) 최소 =-1 최대 =36500 기본 =0
-    ErosionDays = 0,
+    ErosionDays = -1,
     -- 정해진 숫자만큼 경험치 배율을 정합니다. 최소 =0.00 최대 =1000.00 기본 =1.00
     XpMultiplier = 1.0,
     -- XP 배율이 패시브 스킬에도 영향을 미칩니다. 예시=근력 체력.
-    XpMultiplierAffectsPassive = false,
+    XpMultiplierAffectsPassive = true,
     -- 자동차 엔진의 일반적인 소음 크기를 설정합니다. 최소 =0.00 최대 =100.00 기본 =1.00
     ZombieAttractionMultiplier = 1.0,
     -- 활성화하면 모든 차량의 문이 열려있고, 운전이 가능하고, 연료는 가득 차있고, 엔진 소리가 낮아집니다.
@@ -197,7 +197,7 @@ SandboxVars = {
     -- 2 = 빠름
     -- 3 = 보통
     -- 4 = 느림
-    Farming = 3,
+    Farming = 1,
     -- 퇴비통에서 음식이 분해되는 데 걸리는 시간을 정합니다. 기본값=2 주일
     -- 1 = 1 주일
     -- 2 = 2 주일
@@ -206,7 +206,7 @@ SandboxVars = {
     -- 5 = 6 주일
     -- 6 = 8 주일
     -- 7 = 10 주일
-    CompostTime = 2,
+    CompostTime = 1,
     -- 캐릭터가 얼마나 빨리 배고픔, 갈증, 피로가 생기는지 설정합니다. 기본값=보통
     -- 1 = 매우 빠름
     -- 2 = 빠름
@@ -242,19 +242,19 @@ SandboxVars = {
     -- 2 = 빠름
     -- 3 = 보통
     -- 4 = 느림
-    FoodRotSpeed = 3,
+    FoodRotSpeed = 5,
     -- 냉장고의 효율을 설정하여 음식이 신선한 상태를 유지하는 시간을 조절합니다. 기본값=보통
     -- 1 = 매우 낮음
     -- 2 = 낮음
     -- 3 = 보통
     -- 4 = 높음
-    FridgeFactor = 3,
+    FridgeFactor = 5,
     -- 아이템이 보관함에 재생성 되는데 걸리는 시간을 설정합니다. 기본값=없음
     -- 1 = 없음
     -- 2 = 매 일
     -- 3 = 매 주
     -- 4 = 매 월
-    LootRespawn = 1,
+    LootRespawn = 4,
     -- 설정한 시간이 0보다 높을 경우, 설정한 시간 내에 방문한 지역에서는 물건이 재생성되지 않습니다. 최소 =0 최대 =2147483647 기본 =0
     SeenHoursPreventLootRespawn = 0,
     -- 아이템 리스트의 쉼표로 구분된 목록들은 "삭제할 물건의 시간" 설정한 시간 이후에 제거될 예정입니다.
@@ -299,7 +299,7 @@ SandboxVars = {
     -- 1 = 없음
     -- 2 = 1번만 발생
     -- 3 = 가끔 발생
-    Helicopter = 2,
+    Helicopter = 3,
     -- 총소리등 주변에서 임의로 일어나는 요란한 소리의 빈도를 정합니다. 기본값=가끔 발생
     -- 1 = 없음
     -- 2 = 가끔 발생
@@ -315,7 +315,7 @@ SandboxVars = {
     -- 4 = 많음
     GeneratorSpawning = 3,
     -- 발전기 연료 소비량을 설정 합니다. 0.0에서는 연료를 소비 하지 않습니다. 최소 =0.00 최대 =100.00 기본 =1.00
-    GeneratorFuelConsumption = 1.0,
+    GeneratorFuelConsumption = 0.5,
     -- 게임 상에 무작위로 출현하는 특별한 집(전소된 집,세이프하우스,시체가 있는 집) 생성 비율을 설정합니다. 기본값=적음
     -- 1 = 없음
     -- 2 = 매우 적음
@@ -370,7 +370,7 @@ SandboxVars = {
     -- 플레이어가 충격 받거나, 좀비에게 공격 받거나, 추락으로 인한 부상을 입었을 때 팔다리가 부러지게 합니다.
     BoneFracture = true,
     -- 정해둔 시간이 지나면 좀비의 시체가 자동으로 자연소멸 됩니다. (이전 시체 자연소멸 시간 서버 설정을 교체합니다) 최소 =-1.00 최대 =2147483647.00 기본 =216.00
-    HoursForCorpseRemoval = 216.0,
+    HoursForCorpseRemoval = 48.0,
     -- 시체가 캐릭터에 미치는 질병이나 슬픔을 유발시키는 피해의 영향을 설정합니다. 기본값=보통
     -- 1 = 없음
     -- 2 = 약함
@@ -389,7 +389,7 @@ SandboxVars = {
     ClothingDegradation = 3,
     FireSpread = true,
     -- 상한 식량이 지도에서 삭제될 때까지의 게임 내 일수. -1로 설정하면 상한 식량은 없어지지 않습니다. 최소 =-1 최대 =2147483647 기본 =-1
-    DaysForRottenFoodRemoval = -1,
+    DaysForRottenFoodRemoval = 1,
     -- 활성화 시, 발전기는 야외 바닥에서 이용할 수 있습니다. 예를 들자면, 전력이 끊기면 연료보급을 할 수 없지만 발전기를 사용함으로써 주유소의 연료펌프에 전력이 공급되고 연료보급을 할 수 있게 됩니다.
     AllowExteriorGenerator = true,
     -- 안개의 최대 강도를 정합니다. 기본값=보통
@@ -403,7 +403,7 @@ SandboxVars = {
     -- 비활성화시 눈이 지면에 쌓이지 않지만, 초목이나 지붕에는 눈이 쌓입니다.
     EnableSnowOnGround = true,
     -- 특정 근접 무기가 광범위공격이 활성화 되면 한번에 여러좀비를 공격 할 수 있습니다.
-    MultiHitZombies = false,
+    MultiHitZombies = true,
     -- 좀비가 뒤에서 공격했을 때 물릴 가능성 기본값=높음
     -- 1 = 낮음
     -- 2 = 보통
@@ -418,11 +418,11 @@ SandboxVars = {
     -- 2 = 적음
     -- 3 = 보통
     -- 4 = 조금 많음
-    CarSpawnRate = 3,
+    CarSpawnRate = 5,
     -- 연료가 들어있는 차량이 발견 확률을 설정합니다. 기본값=낮음
     -- 1 = 낮음
     -- 2 = 보통
-    ChanceHasGas = 1,
+    ChanceHasGas = 3,
     -- 발견된 차량의 연료가 얼마나 들어있을지 설정합니다. 기본값=적음
     -- 1 = 매우 적음
     -- 2 = 적음
@@ -439,7 +439,7 @@ SandboxVars = {
     -- 6 = 많음
     -- 7 = 매우 많음
     -- 8 = 가득 참
-    FuelStationGas = 5,
+    FuelStationGas = 9,
     -- 자동차의 연료 소비하는 정도를 설정합니다. 최소 =0.00 최대 =100.00 기본 =1.00
     CarGasConsumption = 1.0,
     -- 기본값=적음
@@ -448,13 +448,13 @@ SandboxVars = {
     -- 3 = 적음
     -- 4 = 보통
     -- 5 = 조금 많음
-    LockedCar = 3,
+    LockedCar = 1,
     -- 새 차가 나타날 확률 기본값=나쁨
     -- 1 = 매우 나쁨
     -- 2 = 나쁨
     -- 3 = 보통
     -- 4 = 좋음
-    CarGeneralCondition = 2,
+    CarGeneralCondition = 5,
     -- 차량이 손상될 때 받는 차체에 대한 충격량을 설정합니다. 기본값=보통
     -- 1 = 매우 낮음
     -- 2 = 낮음
@@ -477,7 +477,7 @@ SandboxVars = {
     -- 5 = 조금 많음
     CarAlarm = 2,
     -- 차량사고로 플레이어 받는 부상을 키거나 끕니다.
-    PlayerDamageFromCrash = true,
+    PlayerDamageFromCrash = false,
     -- 사이렌 소리가 더 이상 재생되지 않을 때까지의 시간.  0.0은 배터리가 다 될 때까지 재생하는 것을 의미합니다. 최소 =0.00 최대 =168.00 기본 =0.00
     SirenShutoffHours = 0.0,
     -- 최초 감염사건 이후 유지관리가 된 차량을 플레이어가 발견할 가능성 기본값=적음
@@ -496,9 +496,9 @@ SandboxVars = {
     -- 2 = 신체 내부만
     MaggotSpawn = 1,
     -- 값이 높을수록, 전구 내구도가 더 오래갑니다. 0이면 전구는 절대 깨지지 않습니다. 차량의 등화장치에는 영향을 주지 않습니다. 최소 =0.00 최대 =1000.00 기본 =1.00
-    LightBulbLifespan = 1.0,
+    LightBulbLifespan = 0.0,
     Map = {
-        AllowMiniMap = false,
+        AllowMiniMap = true,
         AllowWorldMap = true,
         MapAllKnown = false,
     },
@@ -623,161 +623,6 @@ SandboxVars = {
         ConsiderTraits = true,
         -- Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized
         ConsiderOccupations = true,
-    },
-    Firearms = {
-        -- With this activated improvised will not break no matter what the break chance is.
-        SuppressorBreak = true,
-        -- Whether or not a screwdriver is required to put attachments on firearms.
-        ScrewdriverReq = false,
-        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. 기본값=One Use
-        -- 1 = One Use
-        -- 2 = High
-        -- 3 = Medium
-        BottleSuppressorBreakChance = 1,
-        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. 기본값=High
-        -- 1 = One Use
-        -- 2 = High
-        -- 3 = Medium
-        FlashlightSuppressorBreakChance = 2,
-        -- How effective a suppressor is on a firearm that uses .22 LR rounds. 기본값=80%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness22 = 3,
-        -- How effective a suppressor is on a firearm that uses 9mm rounds. 기본값=70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness9mm = 4,
-        -- How effective a suppressor is on a firearm that uses .45 ACP rounds. 기본값=70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness45 = 4,
-        -- How effective a suppressor is on a firearm that uses .44 Magnum rounds. 기본값=70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness44 = 4,
-        -- How effective a suppressor is on a firearm that uses .38 Special rounds. 기본값=80%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness38 = 3,
-        -- How effective a suppressor is on a firearm that uses .223 and 5.56x45mm rounds. 기본값=60%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness223 = 5,
-        -- How effective a suppressor is on a firearm that uses .308 and 7.62x51mm rounds. 기본값=50%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness308 = 6,
-        -- How effective a suppressor is on shotgun. 기본값=30%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectivenessShotgunShells = 8,
-        -- How effective improvised suppressors are, on top of the effectiveness based on caliber. 기본값=20%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectivenessImprovised = 9,
-        -- How effective suppressors are on revolvers are, on top of the effectiveness based on caliber. 기본값=60%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectivenessRevolver = 5,
-        -- Whether or not any suppressors can be found in the world.
-        SpawnSuppressors = true,
-        -- Whether or not handgun suppressors(9mm, .45 ACP) can be found in the world.
-        SpawnHandgunSuppressors = true,
-        -- Whether or not rifle suppressors(.22 LR, .223/5.56x45mm, and .308/7.62x51mm) can be found in the world.
-        SpawnRifleSuppressors = true,
-        -- Whether or not shotgun suppressors can be found in the world.
-        SpawnShotgunSuppressors = false,
-        -- Whether or not .38 Special & .357 caliber suppressors can be found in the world.
-        SpawnRevolverSuppressors = false,
-        -- Whether or not Ammo Cases can be found in containers.
-        SpawnAmmoCans = true,
-        -- 기본값=미친듯이 적음
-        -- 1 = 없음
-        -- 2 = 미친듯이 적음
-        -- 3 = 매우 적음
-        -- 4 = 적음
-        LootSuppressor = 2,
-    },
-    MoreBuilds = {
-        -- 더 많은 건축 에서 우물의 최대 물 저장 용량을 설정합니다. <LINE> 참고: 9999로 설정하면 용량이 무제한으로 표시됩니다. 최소 =1 최대 =10000 기본 =1200
-        MaxWaterWallStorageAmount = 1200,
-        -- 서버에서 더 많은 건축을 사용할 수 있는 권한 수준을 설정합니다. 설정하면 지정된 권한 수준을 가진 플레이어만 빌드할 수 있습니다. 기본적으로 권한 제한은 없습니다. 기본값=등급 제한 없음
-        -- 1 = 등급 제한 없음
-        -- 2 = Observer 등급 이상
-        -- 3 = GM 등급 이상
-        -- 4 = Overseer 등급 이상
-        -- 5 = Moderator 등급 이상
-        BuildingPermission = 1,
     },
     MoreTraits = {
         -- 준비: 의약품 특성에 의해 주어지는 붕대의 양입니다. 최소 =1 최대 =999 기본 =4
@@ -950,5 +795,11 @@ SandboxVars = {
     BLTAnnotations = {
         -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
         DropMapOnDeath = false,
+    },
+    VehicleRecycling = {
+        -- 차량을 해체하기 전에 후드, 트렁크 문, 문, 창문, 좌석 등의 부품을 제거해야 할지 설정.
+        UninstallParts = false,
+        -- 최소 =1 최대 =100 기본 =1
+        ActionTimeMultiplier = 1,
     },
 }
